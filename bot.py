@@ -699,12 +699,11 @@ async def on_ready():
     initialize_database()
 
     try:
-        bot.tree.copy_global_to(guild=GUILD)
-        synced_commands = await bot.tree.sync(guild=GUILD)
+        synced_commands = await bot.tree.sync()
 
         print(
             f"Connecté en tant que {bot.user} | "
-            f"{len(synced_commands)} commandes synchronisées"
+            f"{len(synced_commands)} commandes globales synchronisées"
         )
 
     except Exception as error:
