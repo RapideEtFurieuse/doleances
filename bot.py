@@ -271,8 +271,7 @@ def create_embed(page: int = 0):
     embed = discord.Embed(
         title="📋 Registre des doléances",
         description=(
-            "Les doléances du serveur, archivées avec amour "
-            "et une mauvaise foi parfaitement documentée."
+            "Actes diaboliques archivés et comptabilisés"
         ),
         color=discord.Color.orange(),
     )
